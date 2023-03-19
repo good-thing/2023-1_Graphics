@@ -1,16 +1,17 @@
-let img;
+let dog;
 function preload(){
-  img = loadImage("Rainbow.png");
+  dog = loadImage('https://raw.githubusercontent.com/good-thing/2023-1_Graphics/main/dog.jpg');
 }
+
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  createCanvas(600, 600, WEBGL);
 }
 
 function draw() {
-  background(200);
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.01);
-  texture(img);
-  box(100);
-  
+  background(0);
+  rotateX(frameCount * 0.015);
+  rotateY(frameCount * 0.015);
+  rotateZ(frameCount * 0.015);
+  texture(dog);
+  box(width/2);
 }
